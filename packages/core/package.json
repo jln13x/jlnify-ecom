@@ -1,0 +1,19 @@
+{
+  "name": "@jlnify/core",
+  "version": "0.0.0",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pre-build": "rm -rf dist",
+    "build": "npm run pre-build && tsup index.ts --format=esm --dts --clean",
+    "buildy": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@headlessui/react": "^1.7.0",
+    "tsconfig": "*"
+  }
+}
